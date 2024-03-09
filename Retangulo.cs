@@ -6,8 +6,8 @@ namespace Retângulo
 {
     class Retangulo
     {
-        double altura;
-        double largura;
+        public double altura;
+        public double largura;
         public double calculaArea()
         {
             double area = altura * largura;
