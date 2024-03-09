@@ -37,6 +37,17 @@ namespace Retângulo
             Console.WriteLine(perimetro.ToString("F2"));
             double diagonal = calculaDiagonal(altura, largura);
             Console.WriteLine(diagonal.ToString("F2"));
+            //usando a classe//
+            Retangulo retangulo1 = new Retangulo();
+            retangulo1.altura=altura;
+            retangulo1.largura = largura;
+            double area1 = retangulo1.calculaArea();
+            double perimetro1 = retangulo1.calculaPerimetro();
+            double diagonal1 = retangulo1.calculaDiagonal();
+            Console.WriteLine(area1.ToString("F2"));
+            Console.WriteLine(perimetro1.ToString("F2"));
+            Console.WriteLine(diagonal1.ToString("F2"));
+
         }
     }
 }
