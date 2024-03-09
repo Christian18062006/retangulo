@@ -4,6 +4,11 @@ namespace Retângulo
 {
     class Program
     {
+        public static double CalculaPerimetro(double altura, double largura)
+        {
+            double perimetro = (altura+largura)*2;
+            return (perimetro);
+        }
         public static double calcula_area(double altura, double largura)
         {
             double area = altura * largura;
@@ -20,6 +25,8 @@ namespace Retângulo
             largura = double.Parse(Console.ReadLine());
             double area=calcula_area(altura, largura);
             Console.WriteLine(area.ToString("F2"));
+            double perimetro = CalculaPerimetro(altura, largura);
+            Console.WriteLine(perimetro.ToString("F2"));
         }
     }
 }
